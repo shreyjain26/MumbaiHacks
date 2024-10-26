@@ -1,0 +1,29 @@
+.upload-form {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: -3px;
+}
+
+.file-label {
+    cursor: pointer;
+}
+
+.upload-submit {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: inherit;
+}
+
+.btncolor{
+    background-color: black;
+    color: white;
+    border: none;
+    width: 50px;
+    font-size: xx-large;
+}

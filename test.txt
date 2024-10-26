@@ -1,0 +1,108 @@
+Here are 10 multiple-choice questions about Elon Musk:
+
+```
+{
+    "questions": [
+        {
+            "question": "What year was Elon Musk born?",
+            "options": {
+                "A": "1970",
+                "B": "1971",
+                "C": "1972",
+                "D": "1973"
+            },
+            "answer": "B"
+        },
+        {
+            "question": "Which of the following companies did Elon Musk co-found in 1995?",
+            "options": {
+                "A": "PayPal",
+                "B": "SpaceX",
+                "C": "Tesla",
+                "D": "Zip2"
+            },
+            "answer": "D"
+        },
+        {
+            "question": "What is the name of the electric car company founded by Elon Musk in 2003?",
+            "options": {
+                "A": "Tesla Motors",
+                "B": "SpaceX Motors",
+                "C": "Electric Dreams",
+                "D": "SolarCity Motors"
+            },
+            "answer": "A"
+        },
+        {
+            "question": "Which of the following is a goal of Elon Musk's SpaceX program?",
+            "options": {
+                "A": "To establish a human settlement on the moon",
+                "B": "To send humans to Mars",
+                "C": "To develop a new propulsion system for satellites",
+                "D": "To create a space-based solar power system"
+            },
+            "answer": "B"
+        },
+        {
+            "question": "What is the name of the proposed high-speed transportation system conceived by Elon Musk?",
+            "options": {
+                "A": "Hyperloop",
+                "B": "SpaceX Rail",
+                "C": "Tesla Tunnel",
+                "D": "Vacuum Tube Transportation"
+            },
+            "answer": "A"
+        },
+        {
+            "question": "In what year did Elon Musk become the CEO of Tesla?",
+            "options": {
+                "A": "2004",
+                "B": "2008",
+                "C": "2010",
+                "D": "2013"
+            },
+            "answer": "B"
+        },
+        {
+            "question": "Which of the following is a product offered by SolarCity, a company co-founded by Elon Musk?",
+            "options": {
+                "A": "Electric vehicles",
+                "B": "Solar panels",
+                "C": "Wind turbines",
+                "D": "Geothermal systems"
+            },
+            "answer": "B"
+        },
+        {
+            "question": "What is the name of the artificial intelligence research organization co-founded by Elon Musk?",
+            "options": {
+                "A": "DeepMind",
+                "B": "Neuralink",
+                "C": "AI Foundation",
+                "D": "Machine Intelligence Research Institute"
+            },
+            "answer": "B"
+        },
+        {
+            "question": "In what year did Elon Musk announce his plans to send humans to Mars?",
+            "options": {
+                "A": "2010",
+                "B": "2015",
+                "C": "2017",
+                "D": "2020"
+            },
+            "answer": "C"
+        },
+        {
+            "question": "What is the name of the tunnel boring company founded by Elon Musk?",
+            "options": {
+                "A": "The Boring Company",
+                "B": "Tunnel Vision",
+                "C": "SpaceX Tunnels",
+                "D": "Tesla Tunnels"
+            },
+            "answer": "A"
+        }
+    ]
+}
+```

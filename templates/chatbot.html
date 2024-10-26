@@ -1,0 +1,35 @@
+<form id="roadmapForm">
+    <input type="text" id="roadmapInput" placeholder="What do you want to learn?" required>
+    <button type="submit">Generate Roadmap</button>
+  </form>
+  <div id="roadmapContainer"></div>
+<script>
+    document.getElementById('roadmapForm').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const userInput = document.getElementById('roadmapInput').value;
+
+  const response = await fetch('/groq_api', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({ query: userInput }),
+  });
+
+  const data = await response.json();
+  if (response.ok) {
+    updateRoadmapUI(data.response);
+  } else {
+    alert(data.error || "An error occurred");
+  }
+});
+
+function updateRoadmapUI(roadmap) {
+  const container = document.getElementById('roadmapContainer');
+  container.innerHTML = ''; // Clear previous roadmap
+  // Assuming roadmap is a string; adapt if it's a different structure
+  const roadmapItem = document.createElement('div');
+  roadmapItem.textContent = roadmap; // Customize based on your response structure
+  container.appendChild(roadmapItem);
+}
+</script>
