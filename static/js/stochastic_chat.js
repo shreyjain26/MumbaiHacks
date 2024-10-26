@@ -35,7 +35,7 @@ const getChatResponse = async (incomingChatDiv) => {
 
     chatInput.value = "";
 
-    const response = await fetch("/chat", {
+    const response = await fetch("/stochastic_chat", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"

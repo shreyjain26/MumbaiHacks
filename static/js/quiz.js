@@ -9,7 +9,7 @@ const pElement = document.createElement("p");
 
 const loadDataFromLocalstorage = () => {
     const themeColor = localStorage.getItem("themeColor");
-    document.body.classList.toggle("light-mode", themeColor === "light_mode");
+    document.body.classList.toggle("light-mode", themeColor === "dark_mode");
     themeButton.innerText = document.body.classList.contains("light-mode") ? "dark_mode" : "light_mode";
 
     const defaultText = `<div class="default-text" style="background-image: url('images/us.jpg'); background-size: cover; background-repeat: no-repeat;">
@@ -35,7 +35,7 @@ const getChatResponse = async (incomingChatDiv) => {
 
     chatInput.value = "";
 
-    const response = await fetch("/chat", {
+    const response = await fetch("/quiz", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
