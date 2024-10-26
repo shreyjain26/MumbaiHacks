@@ -20,6 +20,11 @@ def home():
     """Render the chat interface."""
     return render_template("index.html")
 
+@app.route("/document_ai")
+def document_ai():
+    """Render the chat interface."""
+    return render_template("chatbot2.html")
+
 @app.route("/groq_api/<prompt>")
 def groq_api(prompt):
     if not prompt:
@@ -55,6 +60,7 @@ def upload_file():
     
 @app.route("/chat", methods=["POST"])
 def chat():
+    print("TEST1234567890")
     user_input = request.json.get("message")
     if not user_input:
         return jsonify({"error": "No input provided!"}), 400

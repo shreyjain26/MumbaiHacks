@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>{{ title | default("Ed Space") }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/chat.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/icon1.png') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=upload_file">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+    <script src="{{ url_for('static', filename='js/chat.js') }}" defer></script>
+</head>
+
+<body class="{{ theme | default('light-mode') }}">
+    <div class="chat-container"></div>
+    <div class="typing-container">
+        <div class="typing-content">
+            <div class="typing-textarea">
+                <textarea id="chat-input" spellcheck="false" placeholder="{{ placeholder | default('Enter a prompt here') }}" required></textarea>
+                <button onclick="handleOutgoingChat()">Send</button>
+                <span id="send-btn" class="material-symbols-rounded">send</span>
+            </div>
+            <div class="typing-controls">
+                <span id="upload-btn" class="material-symbols-outlined">upload_file</span>
+                <span id="delete-btn" class="material-symbols-rounded">delete</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
